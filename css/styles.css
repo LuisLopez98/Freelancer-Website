@@ -1,0 +1,70 @@
+:root{ /* paleta de colores custom properties*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;/* 1 rem = 10px, rem se adapta mejor a tablets o pantallas */ 
+    font-family: 'Krub', sans-serif; /* Lo que se aplique en body aplica en general a todo el documento */ 
+
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+
+}
+
+.titulo span{
+    font-size: 2rem;
+   
+}
+
+.contenedor{
+    width: 120rem;
+   /* margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    margin ya puede tomar valores en una linea y si estos se repiten como
+    en  el ejemplo basta con ponerlos unavez como en el ejemplo
+
+    margin: 0 auto 0 auto; esta es otra forma de escribirlo, pero 
+    ya que se repiten basata con poner una vez cada valor
+    */
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario); /*color de la barra de navegacion*/
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;/*distribuye el contenodo horizontalmente*/
+}
+
+.navegacion-principal a {
+    color: var(--blanco); /*color de la fuente de la barra de navegacion*/
+    text-decoration: none; /*quitar el subrayado de los enlaces de la barra*/
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem; /*ancho de la bara de navegacion */
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+
+
+}
+
